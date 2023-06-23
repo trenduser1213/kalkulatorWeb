@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "2b91e63f-260b-49de-8acd-ad8ea1e20831",
+		"name": "Kalkulator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16647983"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ujang1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ujang1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ujang1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "ujang1",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "ujang1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "ujang1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:29:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:29:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IjYxSkVDbHppcnZsK1RpdkFkNTRtYXc9PSIsInZhbHVlIjoiU0xMdU1aTUtMZXQ0bjBWYjZwZE1WRCtaUnlkQ0JlQzdoWEtQL1lSeGJ6aEltcnJQclV3V01oVUxkeWgvNW1YOUUrbXIyWXJFRk5PeHNHRmIxdGlJNG5rckgwL2RHYTUzNU5MemFrVWhiNVBOVEczSXRJNEZ1Q0ZSRVRWbjNHd1AiLCJtYWMiOiIzMmI1NWJkNjhlMjY4ZWVmM2IxNjFiOWZjNjk3OGY0YmM3MGU3YjliMGUyYjczMDcyMDBiNjJhMTBjODQwN2RkIiwidGFnIjoiIn0%3D; expires=Fri, 23-Jun-2023 13:29:34 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6ImRLUEFlbHgwN0x4ZzgzS3RxZHpvOWc9PSIsInZhbHVlIjoiL1puK3dSREw0QnBJR21lWlhXOEZSd2d3ZEtqOFQ3VjZVdEk4ZWRCR29ZVS9xZlh3QWdYOTNNS0ljV0dSaGdObzUxRzFXZEVQbGEwdXZSZXZ4YXNxUDdkZmhlK0w3SXQyYWFkdDlsbnhEWmVRWW5RdkMweUpZREZTQUE5WGhlVHEiLCJtYWMiOiI4NDlmMzg3MjgyZGQ2ZmFmODJjMmM4ZmQ0NWRjNTJmNDZkNTk1ZWQ2YzlkNmZjNjg0ZDc2YTVmNzVkOTQ4M2ZiIiwidGFnIjoiIn0%3D; expires=Fri, 23-Jun-2023 13:29:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User created successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ujang@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "$2y$10$G7BWFSw8AXqTYzoPl6I7tODLJU2gJX/s/r9RQ/IDgRTLhGxujBwgO",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "ujang@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "$2y$10$G7BWFSw8AXqTYzoPl6I7tODLJU2gJX/s/r9RQ/IDgRTLhGxujBwgO",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:29:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:29:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg3NTE5NzQ3LCJleHAiOjE2ODc1MjMzNDcsIm5iZiI6MTY4NzUxOTc0NywianRpIjoiOWF0TnJ1bDczQlgzVnhLcSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0318JyiU2y4w8xWFaAYU76gIB0XCBrw4dtBcnkO4LSc"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "XSRF-TOKEN=eyJpdiI6IlRJdFZqeWZQSlBnd0VxdUJnTEh1cFE9PSIsInZhbHVlIjoiR1dJcFFEcDNPOUdOeVRxLzBaTGlRUEdxN1QwZ3JNb0R3WFRHNis4aWd0SkNzTmNvbVB5VGo2dmtUYis0SlBNcVFYRFJ6dWphS3hHM0RHK2tDNmloUTF3T0JZYVM0RGVCR01nOTVZWjllcUxSWHp2ai81QzlzSGNjRTJmYnROVkYiLCJtYWMiOiI4NTdjMzU3OGVkMWEyMmZkN2ViZTZmMDUxNDA4NzQzNGM2OGJlNDI3NDBkYjZiYzJiNzBiMjIzMTZmYzk3M2Y0IiwidGFnIjoiIn0%3D; expires=Fri, 23-Jun-2023 13:29:07 GMT; Max-Age=7200; path=/; samesite=lax"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "laravel_session=eyJpdiI6InFPNHBZcmtJSWNORDdSdGlBbGEremc9PSIsInZhbHVlIjoiaUFkVkg1Sko2bjlFL1lWelRBWmx3ZTVwRlFiUnNySHVnQTJoZkdjR2kyQXkrQkhaSDBuSGZLcWZLRkVEV2hxWGpvbU90Q2JBcGJpa0hIaUlNS245V0xaa3FOQUdzeDFiY1VwLzhOL0FTOXJESWVYUVpEWXJVTnJML1BSVUhZUTEiLCJtYWMiOiJlYTg2OWRhYTA5N2IyZjVlNzc3ZTkxYmMwNThiNTIxNGIyMzNkNzk2YmY5ZDZkMWE0MGQzZDc1ZTRkZWZkMzBhIiwidGFnIjoiIn0%3D; expires=Fri, 23-Jun-2023 13:29:07 GMT; Max-Age=7200; path=/; httponly; samesite=lax"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Login Success\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg3NTE5NzQ3LCJleHAiOjE2ODc1MjMzNDcsIm5iZiI6MTY4NzUxOTc0NywianRpIjoiOWF0TnJ1bDczQlgzVnhLcSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0318JyiU2y4w8xWFaAYU76gIB0XCBrw4dtBcnkO4LSc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "$2y$10$G7BWFSw8AXqTYzoPl6I7tODLJU2gJX/s/r9RQ/IDgRTLhGxujBwgO",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:53:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 23 Jun 2023 11:53:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Token is not valid\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hitung",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg3NTIxMjk0LCJleHAiOjE2ODc1MjQ4OTQsIm5iZiI6MTY4NzUyMTI5NCwianRpIjoiR09nbUdTTm92UzFuNlQzZyIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PmgT0AjIQV3QZx9TOEopC2P06fPaeoMFjrrgQ5Z6voU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "operand1",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "operator",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "operand2",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/hitung",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hitung"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
